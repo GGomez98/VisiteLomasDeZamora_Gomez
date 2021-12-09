@@ -1,0 +1,531 @@
+/*Estilo general*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #436fff;
+    font-family: Poppins;
+}
+
+.container{
+    max-width: 85vw;
+    height: fit-content;
+    margin: 2% 0% 0% 7%;
+}
+
+a{
+    color: white;
+}
+
+nav{
+    height: fit-content;
+    background-color: #2354f7;
+    display: flex;
+    align-items: center;
+    grid-area: nav;
+}
+
+nav a{
+    text-decoration: none;
+    display: flex;
+}
+
+.nav-img{
+    width: 3%;
+    padding: 0.5%;
+}
+
+nav a img{
+    width: 100%;
+    justify-self: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+nav ul li{
+    padding: 1%;
+    display: inline-block;
+    align-self: center;
+}
+
+nav ul li:hover{
+    text-decoration: underline white;
+}
+
+main{
+    background-color: #688bff;
+    color: white;
+    padding: 2%;
+    grid-area: main;
+}
+
+h1{
+    width: 100%;
+}
+
+p{
+    margin-bottom: 5%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    grid-area: footer;
+}
+
+.footer-item{
+    margin: 0% 0.5%;
+    align-self: center;
+}
+
+/*Estilo Inicio*/
+.grid-container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 'nav'
+                         'main'
+                         'footer';
+}
+
+.home{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),url(../Assets/Img/FondoHome.jpg);
+      background-position: center;
+    background-repeat: space;
+    text-align: center;
+    padding: 17% 15%;
+    min-height: 22vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main img{
+    width: 33%;
+    height: 40vh;
+}
+
+/*Estilo Historia*/
+.masInfo-block{
+    display: block;
+    margin-bottom: 2%;
+}
+
+/*Estilo Sitios importantes*/
+article{
+    margin-top: 1%;
+}
+article img{
+    width: 100%;
+    height: 100%;
+    grid-area: img;
+}
+
+article p{
+    grid-area: p;
+    margin-right: 5%;
+}
+
+article h2{
+    grid-area: title;
+}
+
+.article-container{
+    display: grid;
+    grid-template-areas: 'title title'
+                         'img p';
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 75%;
+    grid-column-gap: 2%;
+    grid-row-gap: 5%;
+    margin-top: 3%;
+    margin-bottom: 6%;
+}
+
+/*Estilo localización*/
+.main-localizacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.iframe-mapa{
+    justify-self: center;
+}
+
+/*Estilo contacto*/
+.main-contacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 100%;
+    background-color: #a3b9ff;
+    padding: 1%;
+    align-self: flex-start;
+}
+
+.block{
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.input-text{
+    height: 5vh;
+}
+
+.div-info{
+    display: flex;
+    width: 100%;
+    align-content: center;
+}
+
+#new-info{
+    width: 4%;
+    height: 70%;
+}
+
+#label-info{
+    width: 100%;
+    margin-left: 4%;
+}
+
+#mensaje{
+    width: 100%;
+    margin-bottom: 3%;
+    height: 15vh;
+}
+
+#form-button{
+    height: 5vh;
+    background-color: #688bff;
+    border: none;
+}
+
+#form-button:hover{
+    background-color: #517aff;
+}
+
+@media screen and (max-width: 1200px){
+    .home{
+        min-height: 35vh;
+        align-content: center;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .container{
+        max-width: 90vw;
+        height: fit-content;
+        margin: 2% 0% 0% 5%;
+    }
+    nav{
+        max-height: 15vh
+    }
+    .home{
+        min-height: 50vh;
+        align-content: center;
+        background-repeat: round;
+    }
+    .nav-img{
+        width: 7%;
+        padding: 2%;
+    }
+    nav ul{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 20px;
+    }
+    footer{
+    display: flex;
+    justify-content: center;
+    }
+    .footer-item{
+    margin: 0% 2%;
+    align-self: center;
+    }
+    h2{
+        font-size: 19px
+    }
+    main img{
+        width: 33%;
+    }
+    .masInfo-block{
+        margin-bottom: 5%;
+    }
+    article img{
+    width: 100%;
+    }
+    article h2{
+        font-size: 25px;
+    }
+    article p{
+    font-size: 17px; 
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        max-width: 100vw;
+        height: 100vh;
+        margin: 0
+    }
+    nav{
+        max-height: 15vh
+    }
+    .home{
+        min-height: 50vh;
+        align-content: center
+    }
+    .nav-img{
+        width: 7%;
+        padding: 2%;
+    }
+    nav ul{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 20px;
+    }
+    footer{
+    display: flex;
+    justify-content: center;
+    }
+    .footer-item{
+    margin: 0% 2%;
+    align-self: center;
+    }
+    h2{
+        font-size: 19px
+    }
+    main img{
+        width: 33%;
+    }
+    .masInfo-block{
+        margin-bottom: 5%;
+    }
+    article img{
+    width: 100%;
+    }
+    article h2{
+        font-size: 25px;
+    }
+    article p{
+    font-size: 17px; 
+    }
+    form{
+    width: 100%;
+    }
+    #form-button{
+        height: 5vh;
+    }
+    .input-text{
+        height: 5vh;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        max-width: 100vw;
+        height: 100vh;
+        margin: 0
+    }
+    nav{
+        max-height: 15vh
+    }
+    .home{
+        min-height: 50vh;
+        align-content: center
+    }
+    .nav-img{
+        width: 7%;
+        padding: 2%;
+    }
+    nav ul{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 16px;
+    }
+    footer{
+    display: flex;
+    justify-content: center;
+    }
+    .footer-item{
+    margin: 0% 2%;
+    align-self: center;
+    }
+    h2{
+        font-size: 19px
+    }
+    main img{
+        width: 33%;
+    }
+    .masInfo-block{
+        margin-bottom: 5%;
+    }
+    article img{
+        width: 100%;
+    }
+    article h2{
+        font-size: 25px;
+    }
+    article p{
+        font-size: 12.5px; 
+    }
+    form{
+        width: 100%;
+    }
+    #form-button{
+        height: 5vh;
+    }
+    .input-text{
+        height: 5vh;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .container{
+        max-width: 100vw;
+        height: 100vh;
+        margin: 0
+    }
+    nav{
+        max-height: 15vh
+    }
+    .home{
+        min-height: 20vh;
+        align-content: center
+    }
+    .nav-img{
+        width: 7%;
+        padding: 2%;
+    }
+    nav ul{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 10px;
+    }
+    footer{
+    display: flex;
+    justify-content: center;
+    }
+    .footer-item{
+    margin: 0% 2%;
+    align-self: center;
+    }
+    h2{
+        font-size: 19px
+    }
+    main img{
+        width: 33%;
+    }
+    .masInfo-block{
+        margin-bottom: 5%;
+    }
+    .article-container{
+        display: grid;
+        grid-template-areas: 'title'
+                             'img'
+                              'p';     
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        grid-column-gap: 2%;
+        grid-row-gap: 5%;
+        margin-top: 3%;
+        margin-bottom: 6%;
+    }
+    article img{
+        width: 100%;
+    }
+    article h2{
+        font-size: 18px;
+        margin-top: 4%;
+    }
+    article p{
+        font-size: 14px; 
+    }
+    form{
+        width: 100%;
+    }
+    #form-button{
+        height: 5vh;
+    }
+    .input-text{
+        height: 5vh;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .container{
+        max-width: 100vw;
+        height: 100vh;
+        margin: 0;
+    }
+    nav{
+        max-height: 15vh;
+    }
+    .home{
+        min-height: 60vh;
+        align-content: center;
+    }
+    .nav-img{
+        width: 13%;
+        padding: 2%;
+    }
+    nav ul{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 15px;
+    }
+    footer{
+    display: flex;
+    justify-content: center;
+    }
+    .footer-item{
+    margin: 0% 2%;
+    align-self: center;
+    }
+    h2{
+        font-size: 19px;
+    }
+    main img{
+        width: 100%;
+    }
+    .masInfo-block{
+        margin-bottom: 5%;
+    }
+    .article-container{
+        display: grid;
+        grid-template-areas: 'title'
+                             'img'
+                             'p';
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        grid-column-gap: 0%;
+        grid-row-gap: 0%;
+        margin-top: 3%;
+        margin-bottom: 6%;
+    }
+    article h2{
+        font-size: 20px;
+    }
+    article p{
+        font-size: 15px; 
+    }
+    form{
+        width: 100%;
+    }
+}
