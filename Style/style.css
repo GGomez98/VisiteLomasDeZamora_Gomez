@@ -27,13 +27,17 @@ nav{
     grid-area: nav;
 }
 
+.navbar{
+    background-color: #0035e4;
+}
+
 nav a{
     text-decoration: none;
     display: flex;
 }
 
 .nav-img{
-    width: 3%;
+    width: 4%;
     padding: 0.5%;
 }
 
@@ -57,11 +61,16 @@ nav ul li:hover{
     text-decoration: underline white;
 }
 
+#navbarToggleExternalContent{
+    z-index: 1;
+}
+
 main{
     background-color: #688bff;
     color: white;
     padding: 2%;
     grid-area: main;
+    min-height: 80vh;
 }
 
 h1{
@@ -77,11 +86,22 @@ footer{
     justify-content: center;
     padding: 1%;
     grid-area: footer;
+    height: 10vh;
 }
 
 .footer-item{
-    margin: 0% 0.5%;
+    margin: 0% 1.5%;
     align-self: center;
+    height: 90%;
+    width: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.icon:hover{
+    transform: scale(120%);
+    color: #ffffff88;
+    transition: 250ms;
 }
 
 .animate__animated.animate__fadeIn{
@@ -103,10 +123,9 @@ footer{
         rgba(0, 0, 0, 0.5)
       ),url(../Assets/Img/FondoHome.jpg);
       background-position: center;
-    background-repeat: space;
+    background-size: cover;
     text-align: center;
     padding: 17% 15%;
-    min-height: 22vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,6 +141,16 @@ main img{
 .masInfo-block{
     display: block;
     margin-bottom: 2%;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.animate__animated.animate__fadeIn{
+    min-width: 250px;
 }
 
 /*Estilo Sitios importantes*/
@@ -140,7 +169,9 @@ article p{
 }
 
 article h2{
+    display: flex;
     grid-area: title;
+    align-items: center;
 }
 
 .article-container{
@@ -199,7 +230,7 @@ form{
 }
 
 #new-info{
-    width: 4%;
+    width: 6%;
     height: 70%;
 }
 
@@ -226,7 +257,7 @@ form{
 
 @media screen and (max-width: 1200px){
     .home{
-        min-height: 35vh;
+        min-height: 78vh;
         align-content: center;
     }
 }
@@ -241,9 +272,8 @@ form{
         max-height: 15vh
     }
     .home{
-        min-height: 50vh;
+        min-height: 82vh;
         align-content: center;
-        background-repeat: round;
     }
     .nav-img{
         width: 7%;
@@ -292,8 +322,8 @@ form{
         max-height: 15vh
     }
     .home{
-        min-height: 50vh;
-        align-content: center
+        min-height: 92vh;
+        align-content: center;
     }
     .nav-img{
         width: 7%;
@@ -303,6 +333,9 @@ form{
     flex-wrap: wrap;
     justify-content: space-evenly;
     font-size: 20px;
+    }
+    .nav-item{
+        width: 90.5vw;
     }
     footer{
     display: flex;
@@ -351,7 +384,8 @@ form{
         max-height: 15vh
     }
     .home{
-        min-height: 50vh;
+        min-height: 89vh;
+        background-repeat: space;
         align-content: center
     }
     .nav-img{
@@ -363,6 +397,9 @@ form{
     justify-content: space-evenly;
     font-size: 16px;
     }
+    .nav-item{
+        width: 86vw;
+    }
     footer{
     display: flex;
     justify-content: center;
@@ -370,6 +407,7 @@ form{
     .footer-item{
     margin: 0% 2%;
     align-self: center;
+    width: 13%;
     }
     h2{
         font-size: 19px
@@ -393,10 +431,10 @@ form{
         width: 100%;
     }
     #form-button{
-        height: 5vh;
+        height: 10vh;
     }
     .input-text{
-        height: 5vh;
+        height: 10vh;
     }
 }
 
@@ -410,7 +448,8 @@ form{
         max-height: 15vh
     }
     .home{
-        min-height: 20vh;
+        min-height: 89vh;
+        align-content: center;
         align-content: center
     }
     .nav-img{
@@ -422,6 +461,9 @@ form{
     justify-content: space-evenly;
     font-size: 10px;
     }
+    .nav-img{
+        padding: 0%;
+    }
     footer{
     display: flex;
     justify-content: center;
@@ -429,6 +471,7 @@ form{
     .footer-item{
     margin: 0% 2%;
     align-self: center;
+    width: 13%;
     }
     h2{
         font-size: 19px
@@ -438,37 +481,28 @@ form{
     }
     .masInfo-block{
         margin-bottom: 5%;
-    }
+    }   
     .article-container{
-        display: grid;
         grid-template-areas: 'title'
                              'img'
                               'p';     
         grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
-        grid-column-gap: 2%;
-        grid-row-gap: 5%;
-        margin-top: 3%;
-        margin-bottom: 6%;
+        margin-bottom: 40%;
     }
     article img{
         width: 100%;
     }
     article h2{
-        font-size: 18px;
         margin-top: 4%;
-    }
-    article p{
-        font-size: 14px; 
     }
     form{
         width: 100%;
     }
     #form-button{
-        height: 5vh;
+        height: 10vh;
     }
     .input-text{
-        height: 5vh;
+        height: 10vh;
     }
 }
 
@@ -479,11 +513,11 @@ form{
         margin: 0;
     }
     nav{
-        max-height: 15vh;
+        max-height: 20vh;
     }
     .home{
-        min-height: 60vh;
-        align-content: center;
+        min-height: 85vh;
+        align-content: center; 
     }
     .nav-img{
         width: 13%;
@@ -492,7 +526,6 @@ form{
     nav ul{
     flex-wrap: wrap;
     justify-content: space-evenly;
-    font-size: 15px;
     }
     footer{
     display: flex;
@@ -501,6 +534,7 @@ form{
     .footer-item{
     margin: 0% 2%;
     align-self: center;
+    width: 10%;
     }
     h2{
         font-size: 19px;
@@ -517,17 +551,10 @@ form{
                              'img'
                              'p';
         grid-template-columns: 100%;
-        grid-template-rows: 100%;
         grid-column-gap: 0%;
         grid-row-gap: 0%;
         margin-top: 3%;
-        margin-bottom: 6%;
-    }
-    article h2{
-        font-size: 20px;
-    }
-    article p{
-        font-size: 15px; 
+        margin-bottom: 70%;
     }
     form{
         width: 100%;
