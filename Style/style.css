@@ -9,7 +9,7 @@ body{
     font-family: Poppins;
 }
 
-.container{
+.main-container{
     max-width: 85vw;
     height: fit-content;
     margin: 2% 0% 0% 7%;
@@ -39,6 +39,7 @@ nav a{
 .nav-img{
     width: 4%;
     padding: 0.5%;
+    margin-left: 2%;
 }
 
 nav a img{
@@ -57,12 +58,17 @@ nav ul li{
     align-self: center;
 }
 
+.navbar-toggler{
+    margin-right: 5%;
+}
+
 nav ul li:hover{
     text-decoration: underline white;
 }
 
 #navbarToggleExternalContent{
     z-index: 1;
+    width: 100%;
 }
 
 main{
@@ -83,6 +89,7 @@ p{
 
 footer{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 1%;
     grid-area: footer;
@@ -92,16 +99,25 @@ footer{
 .footer-item{
     margin: 0% 1.5%;
     align-self: center;
-    height: 90%;
+    height: 75%;
     width: 3%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .icon:hover{
     transform: scale(120%);
     color: #ffffff88;
     transition: 250ms;
+}
+
+.info-legal{
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5em;
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.623);
 }
 
 .animate__animated.animate__fadeIn{
@@ -141,6 +157,12 @@ main img{
 .masInfo-block{
     display: block;
     margin-bottom: 2%;
+    color: white;
+}
+
+.masInfo-block:hover{
+    color: #ffffff88;
+    transition: 250ms;
 }
 
 .image-container{
@@ -263,13 +285,17 @@ form{
 }
 
 @media screen and (max-width: 1024px){
-    .container{
-        max-width: 90vw;
-        height: fit-content;
-        margin: 2% 0% 0% 5%;
+    .main-container{
+        width: 100vw;
+        margin: 0;
+        padding: 0;
     }
     nav{
-        max-height: 15vh
+        max-height: 15vh;
+        width: 100vw;
+    }
+    main{
+        width: 100vw;
     }
     .home{
         min-height: 82vh;
@@ -287,6 +313,7 @@ form{
     footer{
     display: flex;
     justify-content: center;
+    width: 100vw;
     }
     .footer-item{
     margin: 0% 2%;
@@ -313,17 +340,21 @@ form{
 }
 
 @media screen and (max-width: 768px){
-    .container{
-        max-width: 100vw;
-        height: 100vh;
-        margin: 0
+    .main-container{
+        width: 100vw;
+        margin: 0;
+        padding: 0;
     }
     nav{
-        max-height: 15vh
+        max-height: 15vh;
+        width: 100vw;
     }
     .home{
         min-height: 92vh;
         align-content: center;
+    }
+    main{
+        width: 100vw;
     }
     .nav-img{
         width: 7%;
@@ -340,6 +371,7 @@ form{
     footer{
     display: flex;
     justify-content: center;
+    width: 100vw;
     }
     .footer-item{
     margin: 0% 2%;
@@ -375,13 +407,17 @@ form{
 }
 
 @media screen and (max-width: 600px){
-    .container{
-        max-width: 100vw;
-        height: 100vh;
-        margin: 0
+    .main-container{
+        width: 100vw;
+        margin: 0;
+        padding: 0;
     }
     nav{
-        max-height: 15vh
+        max-height: 15vh;
+        width: 100vw;
+    }
+    main{
+        width: 100vw;
     }
     .home{
         min-height: 89vh;
@@ -398,11 +434,12 @@ form{
     font-size: 16px;
     }
     .nav-item{
-        width: 86vw;
+        width: 100vw;
     }
     footer{
     display: flex;
     justify-content: center;
+    width: 100vw;
     }
     .footer-item{
     margin: 0% 2%;
@@ -439,18 +476,21 @@ form{
 }
 
 @media screen and (max-width: 480px){
-    .container{
-        max-width: 100vw;
-        height: 100vh;
-        margin: 0
+    .main-container{
+        width: 100vw;
+        margin: 0;
+        padding: 0;
     }
     nav{
-        max-height: 15vh
+        max-height: 20vh;
+        width: 100vw;
     }
     .home{
         min-height: 89vh;
         align-content: center;
-        align-content: center
+    }
+    main{
+        width: 100vw;
     }
     .nav-img{
         width: 7%;
@@ -467,6 +507,7 @@ form{
     footer{
     display: flex;
     justify-content: center;
+    width: 100vw;
     }
     .footer-item{
     margin: 0% 2%;
@@ -487,7 +528,7 @@ form{
                              'img'
                               'p';     
         grid-template-columns: 100%;
-        margin-bottom: 60%;
+        margin-bottom: 40%;
     }
     article img{
         width: 100%;
@@ -507,13 +548,17 @@ form{
 }
 
 @media screen and (max-width: 320px){
-    .container{
-        max-width: 100vw;
-        height: 100vh;
+    .main-container{
+        width: 100vw;
         margin: 0;
+        padding: 0;
     }
     nav{
         max-height: 20vh;
+        width: 100vw;
+    }
+    main{
+        width: 100vw;
     }
     .home{
         min-height: 85vh;
@@ -530,6 +575,7 @@ form{
     footer{
     display: flex;
     justify-content: center;
+    width: 100vw;
     }
     .footer-item{
     margin: 0% 2%;
@@ -554,7 +600,7 @@ form{
         grid-column-gap: 0%;
         grid-row-gap: 0%;
         margin-top: 3%;
-        margin-bottom: 70%;
+        margin-bottom: 50%;
     }
     form{
         width: 100%;
