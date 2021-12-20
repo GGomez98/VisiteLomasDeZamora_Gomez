@@ -1,0 +1,86 @@
+a{
+    color: white;
+}
+
+nav{
+    height: fit-content;
+    background-color: #2354f7;
+    display: flex;
+    align-items: center;
+    grid-area: nav;
+    a{
+        text-decoration: none;
+        display: flex;
+        img{
+            width: 100%;
+            justify-self: center;
+        }
+    }
+    ul{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        li{
+            padding: 1%;
+            display: inline-block;
+            align-self: center;
+            &:hover{
+                text-decoration: underline white;
+            }
+        }
+    }
+}
+
+.navbar{
+    background-color: #0035e4;
+}
+
+.nav-img{
+    width: 4%;
+    padding: 0.5%;
+    margin-left: 2%;
+}
+
+.navbar-toggler{
+    margin-right: 5%;
+}
+
+#navbarToggleExternalContent{
+    z-index: 1;
+    width: 100%;
+}
+
+.icon{
+    &:hover{
+    transform: scale(120%);
+    color: #ffffff88;
+    transition: 250ms;
+    }
+}
+
+.masInfo-block{
+    display: block;
+    margin-bottom: 2%;
+    color: white;
+        &:hover{
+            color: #ffffff88;
+            transition: 250ms;
+        }
+}
+
+#form-button{
+    height: 5vh;
+    background-color: #688bff;
+    border: none;
+        &:hover{
+            background-color: #517aff;
+        }
+}
+
+.animate__animated.animate__fadeIn{
+    --animate-duration: 2s;
+}
+
+.animate__animated.animate__fadeIn{
+    min-width: 250px;
+}
