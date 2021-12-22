@@ -10,3 +10,37 @@ h1{
 p{
     margin-bottom: 5%;
 }
+
+@mixin home($min-heigth,$align-content) {
+    min-height: $min-heigth;
+    align-content: $align-content;
+}
+
+@mixin main-container {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin nav($max-height, $width) {
+    max-height: $max-height;
+    width: $width;
+}
+
+@mixin nav_ul($flex-wrap,$justify-content,$font-size) {
+    flex-wrap: $flex-wrap;
+    justify-content: $justify-content;
+    font-size: $font-size;
+}
+
+@mixin footer($display, $justify-content, $width) {
+    display: $display;
+    justify-content: $justify-content;
+    width: $width;
+}
+
+@mixin footer-item($margin, $align-self, $width) {
+    margin: $margin;
+    align-self: $align-self;
+    width: $width;
+}

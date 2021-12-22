@@ -18,19 +18,16 @@ main{
 }
 
 footer{
-    display: flex;
+    @include footer(flex, center, 100%);
     flex-wrap: wrap;
-    justify-content: center;
     padding: 1%;
     grid-area: footer;
     height: 10vh;
 }
 
 .footer-item{
-    margin: 0% 1.5%;
-    align-self: center;
+    @include footer-item(0% 1.5%, center, 3%);
     height: 75%;
-    width: 3%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,27 +183,22 @@ form{
 
 @media screen and (max-width: 1200px){
     .home{
-        min-height: 78vh;
-        align-content: center;
+        @include home(78vh,center);
     }
 }
 
 @media screen and (max-width: 1024px){
     .main-container{
-        width: 100vw;
-        margin: 0;
-        padding: 0;
+        @include main-container;
     }
     nav{
-        max-height: 15vh;
-        width: 100vw;
+        @include nav(15vh, 100vw);
     }
     main{
         width: 100vw;
     }
     .home{
-        min-height: 82vh;
-        align-content: center;
+        @include home(82vh,center);
     }
     .nav-img{
         width: 7%;
@@ -214,15 +206,11 @@ form{
     }
     nav{ 
         ul{
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        font-size: 20px;
+        @include nav_ul(wrap,space-evenly,20px);
         }
     }
     footer{
-    display: flex;
-    justify-content: center;
-    width: 100vw;
+    @include footer(flex, center, 100vw);
     }
     .footer-item{
     margin: 0% 2%;
@@ -258,17 +246,13 @@ form{
 
 @media screen and (max-width: 768px){
     .main-container{
-        width: 100vw;
-        margin: 0;
-        padding: 0;
+        @include main-container;
     }
     nav{
-        max-height: 15vh;
-        width: 100vw;
+        @include nav(15vh, 100vw)
     }
     .home{
-        min-height: 92vh;
-        align-content: center;
+        @include home(92vh,center);
     }
     main{
         width: 100vw;
@@ -279,18 +263,14 @@ form{
     }
     nav{ 
         ul{
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        font-size: 20px;
+            @include nav_ul(wrap,space-evenly,20px);
         }
     }
     .nav-item{
         width: 90.5vw;
     }
     footer{
-    display: flex;
-    justify-content: center;
-    width: 100vw;
+    @include footer(flex, center, 100vw);
     }
     .footer-item{
     margin: 0% 2%;
@@ -335,21 +315,17 @@ form{
 
 @media screen and (max-width: 600px){
     .main-container{
-        width: 100vw;
-        margin: 0;
-        padding: 0;
+        @include main-container;
     }
     nav{
-        max-height: 15vh;
-        width: 100vw;
+        @include nav(15vh, 100vw);
     }
     main{
         width: 100vw;
     }
     .home{
-        min-height: 89vh;
+        @include home(89vh,center);
         background-repeat: space;
-        align-content: center
     }
     .nav-img{
         width: 7%;
@@ -357,23 +333,17 @@ form{
     }
     nav{ 
         ul{
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        font-size: 16px;
+        @include nav_ul(wrap,space-evenly,16px);
         }
     }
     .nav-item{
         width: 100vw;
     }
     footer{
-    display: flex;
-    justify-content: center;
-    width: 100vw;
+    @include footer(flex, center, 100vw);
     }
     .footer-item{
-    margin: 0% 2%;
-    align-self: center;
-    width: 13%;
+        @include footer-item(0% 2%, center, 13%);
     }
     h2{
         font-size: 19px
@@ -414,17 +384,13 @@ form{
 
 @media screen and (max-width: 480px){
     .main-container{
-        width: 100vw;
-        margin: 0;
-        padding: 0;
+        @include main-container;
     }
     nav{
-        max-height: 20vh;
-        width: 100vw;
+        @include nav(20vh, 100vw);
     }
     .home{
-        min-height: 89vh;
-        align-content: center;
+        @include home(89vh,center);
     }
     main{
         width: 100vw;
@@ -436,23 +402,17 @@ form{
     nav {
         ul
         {
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        font-size: 10px;
+        @include nav_ul(wrap,space-evenly,10px);
         }
     }
     .nav-img{
         padding: 0%;
     }
     footer{
-    display: flex;
-    justify-content: center;
-    width: 100vw;
+    @include footer(flex, center, 100vw);
     }
     .footer-item{
-    margin: 0% 2%;
-    align-self: center;
-    width: 13%;
+    @include footer-item(0% 2%, center, 13%);
     }
     h2{
         font-size: 19px
@@ -470,7 +430,7 @@ form{
                              'img'
                               'p';     
         grid-template-columns: 100%;
-        margin-bottom: 50%;
+        margin-bottom: 65%;
     }
     article{
         img{
@@ -495,20 +455,16 @@ form{
 
 @media screen and (max-width: 320px){
     .main-container{
-        width: 100vw;
-        margin: 0;
-        padding: 0;
+        @include main-container;
     }
     nav{
-        max-height: 20vh;
-        width: 100vw;
+        @include nav(20vh, 100vw);
     }
     main{
         width: 100vw;
     }
     .home{
-        min-height: 85vh;
-        align-content: center; 
+        @include home(85vh,center); 
     }
     .nav-img{
         width: 13%;
@@ -521,14 +477,10 @@ form{
         }
     }
     footer{
-    display: flex;
-    justify-content: center;
-    width: 100vw;
+    @include footer(flex, center, 100vw);
     }
     .footer-item{
-    margin: 0% 2%;
-    align-self: center;
-    width: 10%;
+    @include footer-item(0% 2%, center, 10%);
     }
     h2{
         font-size: 19px;
@@ -554,5 +506,19 @@ form{
     }
     form{
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 290px){
+    .article-container{
+        display: grid;
+        grid-template-areas: 'title'
+                             'img'
+                             'p';
+        grid-template-columns: 100%;
+        grid-column-gap: 0%;
+        grid-row-gap: 0%;
+        margin-top: 3%;
+        margin-bottom: 80%;
     }
 }
