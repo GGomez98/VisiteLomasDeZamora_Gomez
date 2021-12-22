@@ -36,7 +36,7 @@ nav{
 }
 
 .nav-img{
-    width: 4%;
+    width: 5%;
     padding: 0.5%;
     margin-left: 2%;
 }
@@ -48,6 +48,9 @@ nav{
 #navbarToggleExternalContent{
     z-index: 1;
     width: 100%;
+    .nav-link{
+        font-size: 2em;
+    }
 }
 
 .icon{
