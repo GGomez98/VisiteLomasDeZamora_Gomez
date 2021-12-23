@@ -89,9 +89,10 @@ body {
 main {
   background-color: #688bff;
   color: white;
-  padding: 2%;
-  grid-area: main;
-  min-height: 80vh; }
+  padding: 2%; }
+  main img {
+    width: 33%;
+    height: 40vh; }
 
 footer {
   display: flex;
@@ -118,11 +119,6 @@ footer {
   font-size: 0.8em;
   color: rgba(0, 0, 0, 0.623); }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-areas: 'nav' 'main' 'footer'; }
-
 .home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../Assets/Img/FondoHome.jpg);
   background-position: center;
@@ -134,10 +130,6 @@ footer {
   align-items: center;
   flex-wrap: wrap; }
 
-main img {
-  width: 33%;
-  height: 40vh; }
-
 .image-container {
   display: flex;
   justify-content: center;
@@ -145,20 +137,17 @@ main img {
 
 article {
   margin-top: 1%; }
-
-article img {
-  width: 100%;
-  height: 100%;
-  grid-area: img; }
-
-article p {
-  grid-area: p;
-  margin-right: 5%; }
-
-article h2 {
-  display: flex;
-  grid-area: title;
-  align-items: center; }
+  article img {
+    width: 100%;
+    height: 100%;
+    grid-area: img; }
+  article p {
+    grid-area: p;
+    margin-right: 5%; }
+  article h2 {
+    display: flex;
+    grid-area: title;
+    align-items: center; }
 
 .article-container {
   display: grid;
@@ -234,9 +223,6 @@ form {
     width: 100vw;
     margin: 0;
     padding: 0; }
-  nav {
-    max-height: 15vh;
-    width: 100vw; }
   main {
     width: 100vw; }
   .home {
@@ -245,10 +231,13 @@ form {
   .nav-img {
     width: 7%;
     padding: 2%; }
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    font-size: 20px; }
+  nav {
+    max-height: 15vh;
+    width: 100vw; }
+    nav ul {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      font-size: 20px; }
   footer {
     display: flex;
     justify-content: center;
@@ -274,9 +263,6 @@ form {
     width: 100vw;
     margin: 0;
     padding: 0; }
-  nav {
-    max-height: 15vh;
-    width: 100vw; }
   .home {
     min-height: 92vh;
     align-content: center; }
@@ -285,10 +271,13 @@ form {
   .nav-img {
     width: 7%;
     padding: 2%; }
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    font-size: 20px; }
+  nav {
+    max-height: 15vh;
+    width: 100vw; }
+    nav ul {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      font-size: 20px; }
   .nav-item {
     width: 90.5vw; }
   footer {
@@ -309,7 +298,7 @@ form {
   article h2 {
     font-size: 25px; }
   article p {
-    font-size: 17px; }
+    font-size: 15px; }
   form {
     width: 100%; }
   #form-button {
@@ -322,9 +311,6 @@ form {
     width: 100vw;
     margin: 0;
     padding: 0; }
-  nav {
-    max-height: 15vh;
-    width: 100vw; }
   main {
     width: 100vw; }
   .home {
@@ -334,10 +320,13 @@ form {
   .nav-img {
     width: 7%;
     padding: 2%; }
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    font-size: 16px; }
+  nav {
+    max-height: 15vh;
+    width: 100vw; }
+    nav ul {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      font-size: 16px; }
   .nav-item {
     width: 100vw; }
   footer {
@@ -383,10 +372,13 @@ form {
   .nav-img {
     width: 7%;
     padding: 2%; }
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    font-size: 10px; }
+  nav {
+    max-height: 20vh;
+    width: 100vw; }
+    nav ul {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      font-size: 10px; }
   .nav-img {
     padding: 0%; }
   footer {
@@ -406,7 +398,7 @@ form {
   .article-container {
     grid-template-areas: 'title' 'img' 'p';
     grid-template-columns: 100%;
-    margin-bottom: 65%; }
+    margin-bottom: 69%; }
   article img {
     width: 100%; }
   article h2 {
@@ -423,9 +415,6 @@ form {
     width: 100vw;
     margin: 0;
     padding: 0; }
-  nav {
-    max-height: 20vh;
-    width: 100vw; }
   main {
     width: 100vw; }
   .home {
@@ -434,9 +423,12 @@ form {
   .nav-img {
     width: 13%;
     padding: 2%; }
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: space-evenly; }
+  nav {
+    max-height: 20vh;
+    width: 100vw; }
+    nav ul {
+      flex-wrap: wrap;
+      justify-content: space-evenly; }
   footer {
     display: flex;
     justify-content: center;
@@ -451,6 +443,8 @@ form {
     width: 100%; }
   .masInfo-block {
     margin-bottom: 5%; }
+  article h2 {
+    margin-top: 4%; }
   .article-container {
     display: grid;
     grid-template-areas: 'title' 'img' 'p';
@@ -458,7 +452,7 @@ form {
     grid-column-gap: 0%;
     grid-row-gap: 0%;
     margin-top: 3%;
-    margin-bottom: 50%; }
+    margin-bottom: 67%; }
   form {
     width: 100%; } }
 
@@ -470,4 +464,6 @@ form {
     grid-column-gap: 0%;
     grid-row-gap: 0%;
     margin-top: 3%;
-    margin-bottom: 80%; } }
+    margin-bottom: 100%; }
+  article h2 {
+    margin-top: 4%; } }
