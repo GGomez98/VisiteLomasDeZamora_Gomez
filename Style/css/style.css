@@ -6,7 +6,7 @@ h1 {
   width: 100%; }
 
 p {
-  margin-bottom: 5%; }
+  margin-bottom: 4%; }
 
 a {
   color: white; }
@@ -151,7 +151,8 @@ article {
 
 .article-container {
   display: grid;
-  grid-template-areas: 'title title' 'img p';
+  grid-template-areas: 'title title'
+ 'img p';
   grid-template-columns: 50% 50%;
   grid-template-rows: 25% 75%;
   grid-column-gap: 2%;
@@ -396,7 +397,9 @@ form {
   .masInfo-block {
     margin-bottom: 5%; }
   .article-container {
-    grid-template-areas: 'title' 'img' 'p';
+    grid-template-areas: 'title'
+ 'img'
+ 'p';
     grid-template-columns: 100%;
     margin-bottom: 69%; }
   article img {
@@ -447,7 +450,9 @@ form {
     margin-top: 4%; }
   .article-container {
     display: grid;
-    grid-template-areas: 'title' 'img' 'p';
+    grid-template-areas: 'title'
+ 'img'
+ 'p';
     grid-template-columns: 100%;
     grid-column-gap: 0%;
     grid-row-gap: 0%;
@@ -459,7 +464,9 @@ form {
 @media screen and (max-width: 290px) {
   .article-container {
     display: grid;
-    grid-template-areas: 'title' 'img' 'p';
+    grid-template-areas: 'title'
+ 'img'
+ 'p';
     grid-template-columns: 100%;
     grid-column-gap: 0%;
     grid-row-gap: 0%;
